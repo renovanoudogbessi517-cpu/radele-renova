@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div class="row shadow bg-success mb-5">
+            <div class="col col-md-6 p-3 my-4 text-white">
+                <h1>Contact</h1>
+                <h3>Bienvenue dans vos contacts</h3>
+            </div>
+            <div class="col col-md-6 "></div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col col-md-6 rech justify-content-end">
+                        <input class="w-100 border-2 p-1 mb-3 shadox" type="text" placeholder="Recherche">
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Profil</th>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+                                    <th>Numero</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-success">
+                                    <th></th>
+                                    <th>AGBAN</th>
+                                    <th>Amour</th>
+                                    <th>0197245678</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>AKPOTROSSOU</th>
+                                    <th>Mecharc</th>
+                                    <th>0199234567</th>
+                                </tr>
+                                <tr class="table-success">
+                                    <th></th>
+                                    <th>ASSOUMA</th>
+                                    <th>Hadirou</th>
+                                    <th>0196786543</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>ADIKO</th>
+                                    <th>Amos</th>
+                                    <th>0166564323</th>
+                                </tr>
+                                <tr class="table-success">
+                                    <th></th>
+                                    <th>BAKARI</th>
+                                    <th>Hichame</th>
+                                    <th>0194663213</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>BAGUIDI</th>
+                                    <th>Pacome</th>
+                                    <th>0141568743</th>
+                                </tr>
+                                <tr class="table-success">
+                                    <th></th>
+                                    <th>BOKO</th>
+                                    <th>Thoma</th>
+                                    <th>0167564321</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>BOOBA</th>
+                                    <th>Didi B</th>
+                                    <th>0194090770</th>
+                                </tr>
+                                <tr class="table-success">
+                                    <th></th>
+                                    <th>CODJO</th>
+                                    <th>Coffi</th>
+                                    <th>0145223976</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-12 border">
+                <div class="row p-2">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center border" style="width: 150px; height: 150px;">
+                        <span class="text-align-center">Ajourtez une photo</span>
+                    </div>
+                </div>
+                <div class="row py-2 ">
+                    <form action="">
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Nom</label>
+                            <input class="form-control" type="text" name="name" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="prenom">Prenom</label>
+                            <input class="form-control" type="text" name="prenom" id="prenom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="telephone">Telephone-mobil</label>
+                            <input class="form-control" type="text" name="telephone" id="telephone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="text" name="email" id="email" required>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-md-6 mb-3">
+                                <button class="w-100 btn btn-success" type="submit">Enregistrer</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="w-100 btn btn-success" type="submit">Annuler</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row shadow bg-success mb-5">
+            <div class="col col-md-6 p-3 my-4 text-white">
+                <h1>Agendar</h1>
+                <h3>Bienvenue dans votre Agendar</h3>
+            </div>
+            <div class="col col-md-6 "></div>
+        </div>
+        <div class="row">
+            <div class="col py-2 ">
+                <form action="">
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Date</label>
+                        <input class="form-control" type="date" name="name" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="prenom">Heur</label>
+                        <input class="form-control" type="time" name="prenom" id="prenom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="prenom">Description</label>
+                        <input class="form-control" type="text" name="prenom" id="prenom" required>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-md-6 mb-3">
+                            <button class="w-100 btn btn-success" type="submit">Enregistrer</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="w-100 btn btn-success" type="submit">Annuler</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-lg-8 col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Heur</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-danger">
+                            <th>2016/04/12 </th>
+                            <th>12:00</th>
+                            <th>Diné</th>
+                        </tr>
+                        <tr>
+                            <th>2026/03/21</th>
+                            <th>08:00</th>
+                            <th>Reunion</th>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>2026/04/22</th>
+                            <th>9:30</th>
+                            <th>Projet</th>
+                        </tr>
+                        <tr>
+                            <th>2026/05/12</th>
+                            <th>10:00</th>
+                            <th>Sport</th>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>2026/05/11</th>
+                            <th>10:30</th>
+                            <th>Dejeuner</th>
+                        </tr>
+                        <tr>
+                            <th>2026/04/15</th>
+                            <th>11:00</th>
+                            <th>Bureau</th>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>2026/06/02</th>
+                            <th>14:30</th>
+                            <th>Pose</th>
+                        </tr>
+                        <tr>
+                            <th>2026/02/20</th>
+                            <th>15:00</th>
+                            <th>Reprise</th>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>2026/07/02</th>
+                            <th>17:00</th>
+                            <th>Sortie</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
