@@ -20,17 +20,22 @@
         <div class="row">
             <div class="col col-lg-8 col-md-12">
                 <div class="row">
-                    <div class="col col-md-6 rech justify-content-end">
-                        <input class="w-100 border-2 p-1 mb-3 shadox" type="text" placeholder="Recherche">
+                    <div class="mb-3 w-75 col col-md-6 rech justify-content-end">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
-                    <div class="col"></div>
+                    <div class="col d-flex justify-content-end ">
+                        <button type="button" class="btn h-75 btn-outline-success d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter</button>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col col-md-12">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Profil</th>
+                                    <th class="d-none d-lg-block">Profil</th>
                                     <th>Nom</th>
                                     <th>Prénom</th>
                                     <th>Numero</th>
@@ -38,68 +43,95 @@
                             </thead>
                             <tbody>
                                 <tr class="table-success">
-                                    <th></th>
-                                    <th>AGBAN</th>
+                                    <th class="d-none d-lg-block"></th>
+                                    <th>ASSOGBA</th>
                                     <th>Amour</th>
                                     <th>0197245678</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button id="exemple" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#example">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr>
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>AKPOTROSSOU</th>
                                     <th>Mecharc</th>
                                     <th>0199234567</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr class="table-success">
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>ASSOUMA</th>
                                     <th>Hadirou</th>
                                     <th>0196786543</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr>
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>ADIKO</th>
                                     <th>Amos</th>
                                     <th>0166564323</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr class="table-success">
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>BAKARI</th>
                                     <th>Hichame</th>
                                     <th>0194663213</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr>
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>BAGUIDI</th>
                                     <th>Pacome</th>
                                     <th>0141568743</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr class="table-success">
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>BOKO</th>
                                     <th>Thoma</th>
                                     <th>0167564321</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr>
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>BOOBA</th>
                                     <th>Didi B</th>
                                     <th>0194090770</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                                 <tr class="table-success">
-                                    <th></th>
+                                    <th class="d-none d-lg-block"></th>
                                     <th>CODJO</th>
                                     <th>Coffi</th>
                                     <th>0145223976</th>
+                                    <th class="d-flex justify-content-end">
+                                        <button class="btn btn-outline-success">Modifie</button>
+                                    </th>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-4 col-md-12 border">
+            <div class="col d-none d-lg-block col-lg-4 col-md-12 border">
                 <div class="row p-2">
                     <div class="rounded-circle d-flex justify-content-center align-items-center border" style="width: 150px; height: 150px;">
-                        <span class="text-align-center">Ajourtez une photo</span>
+                        <span class="text-center">Ajourtez une photo</span>
                     </div>
                 </div>
                 <div class="row py-2 ">
@@ -114,18 +146,18 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="telephone">Telephone-mobil</label>
-                            <input class="form-control" type="text" name="telephone" id="telephone" required>
+                            <input class="form-control" type="number" name="telephone" id="telephone" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="email">Email</label>
-                            <input class="form-control" type="text" name="email" id="email" required>
+                            <input class="form-control" type="email" name="email" id="email" required>
                         </div>
                         <div class="row justify-content-evenly">
                             <div class="col-md-6 mb-3">
                                 <button class="w-100 btn btn-success" type="submit">Enregistrer</button>
                             </div>
                             <div class="col-md-6">
-                                <button class="w-100 btn btn-success" type="submit">Annuler</button>
+                                <button class="w-100 btn btn-success" type="button">Annuler</button>
                             </div>
                         </div>
                     </form>
@@ -143,7 +175,7 @@
             <div class="col col-md-6 "></div>
         </div>
         <div class="row">
-            <div class="col py-2 ">
+            <div class="col-12 col-lg-6 py-2 ">
                 <form action="">
                     <div class="mb-3">
                         <label class="form-label" for="name">Date</label>
@@ -167,11 +199,11 @@
                     </div>
                 </form>
             </div>
-            <div class="col col-lg-8 col-md-12">
+            <div class="col-12 col-lg-6 ">
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Date</th>
+                            <th class="text-xl">Date</th>
                             <th>Heur</th>
                             <th>Description</th>
                         </tr>
@@ -227,7 +259,97 @@
             </div>
         </div>
     </div>
-
+    <!-- ----modal nouveau--- -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nouveau Contact</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="row p-2">
+                            <div class="rounded-circle d-flex justify-content-center align-items-center border" style="width: 100px; height: 100px;">
+                                <span class="text-center">Ajourtez une photo</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label class="form-label" for="name">Nom</label>
+                                    <input class="form-control" type="text" name="name" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="prenom">Prenom</label>
+                                    <input class="form-control" type="text" name="prenom" id="prenom" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="telephone">Telephone-mobil</label>
+                                    <input class="form-control" type="number" name="telephone" id="telephone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email" name="email" id="email" required>
+                                </div>
+                                <div class="d-flex justify-content-end ">
+                                    <button type="submit" class="btn btn-success">Enregistrer</button>
+                                    <button type="button" class="btn btn-success ms-2" data-bs-dismiss="modal">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----modal modifie--- -->
+    <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleLabel">Modifié le Contact</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="row p-2">
+                            <div class="col-4 rounded-circle d-flex justify-content-center align-items-center border" style="width: 100px; height: 100px;">
+                                <span class="text-center">Modifez la photo</span>
+                            </div>
+                            <div class="d-flex align-items-center col ms-5">
+                                <h2 class="text-item-center">ASSOGBA <br> Amour</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label class="form-label" for="name">Nom</label>
+                                    <input class="form-control" type="text" name="name" id="name" value="ASSOGBA" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="prenom">Prenom</label>
+                                    <input class="form-control" type="text" name="prenom" id="prenom" value="Amour" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="telephone">Telephone-mobil</label>
+                                    <input class="form-control" type="number" name="telephone" id="telephone" value="0197245678" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email" name="email" id="email" value="amour@gmail.com" required>
+                                </div>
+                                <div class="d-flex justify-content-end ">
+                                    <button type="submit" class="btn btn-success">Enregistrer</button>
+                                    <button type="button" class="btn btn-success ms-2" data-bs-dismiss="modal">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
